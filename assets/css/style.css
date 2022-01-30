@@ -7,6 +7,8 @@
   .fs-7 {
     font-size: 0.8rem;
   }
+
+
   /* nav button */
   .nav__btn button:hover {
     background: #f0f2f5 !important;
@@ -128,11 +130,12 @@
 
   .gif__img {
     cursor: pointer;
+    opacity: 70%;
   }
 
   .gif__img:hover {
     background: rgba(255, 255, 255, .5);
-    background-blend-mode: multiply;
+    opacity: 100%;
   }
 
   @media (min-width: 62em) {
