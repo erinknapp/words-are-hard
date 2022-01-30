@@ -111,6 +111,30 @@
   .post__comment .accordion-button:not(.collapsed) {
     box-shadow: none !important;
   }
+
+  /* Giphy  */
+
+  /* .populateGiphy {
+    width: 100%;    
+  }
+   */
+
+  
+  .modal-body {
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;  
+  }
+
+  .gif__img {
+    cursor: pointer;
+  }
+
+  .gif__img:hover {
+    background: rgba(255, 255, 255, .5);
+    background-blend-mode: multiply;
+  }
+
   @media (min-width: 62em) {
     footer {
       position: relative;
@@ -133,3 +157,5 @@
     position:relative;
 
   }
+
+

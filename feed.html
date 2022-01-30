@@ -283,10 +283,10 @@
                                                 <div class="p-2">
                                                     <img src="https://source.unsplash.com/collection/happy-people"
                                                         alt="from fb" class="rounded-circle" style="
-                                  width: 38px;
-                                  height: 38px;
-                                  object-fit: cover;
-                                " />
+                                                                                                    width: 38px;
+                                                                                                    height: 38px;
+                                                                                                    object-fit: cover;
+                                                                                                    " />
                                                 </div>
                                                 <div>
                                                     <p class="m-0 fw-bold">Your name</p>
@@ -302,12 +302,15 @@
                                             <!-- searchbar -->
                                             <div class="input-group">
                                                 <div class="form-outline">
-                                                    <input class="form-control me-2" id="form1" type="search"
+                                                    <input class="form-control me-2" id="input__gif" type="search"
                                                         placeholder="Search Giphy" aria-label="Search">
                                                 </div>
-                                                <button type="button" class="btn btn-primary">
+                                                <button onclick = "getGifs()" type="button" class="btn btn-primary">
                                                     <i class="fas fa-search"></i>
                                                 </button>
+                                            </div>
+                                            <div class="container">
+                                            <div class="populateGiphy row" id="populateGiphy"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -332,7 +335,7 @@
                     d-flex
                     align-items-center
                     justify-content-center
-                  " type="button" data-bs-toggle="modal" data-bs-target="#createModal-original-meme">
+                " type="button" data-bs-toggle="modal" data-bs-target="#createModal-original-meme">
                             <i class="fas fa-file-upload me-2 text-primary"></i>
                             <p class="m-0 text-muted">Send your Meme</p>
                         </div>
@@ -834,6 +837,7 @@
                 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                 crossorigin="anonymous"></script>
             <!--main.js-->
+            <script src="./GiphyTEST.js"></script>
             <script src="./assets/js/script.js"></script>
 </body>
 
