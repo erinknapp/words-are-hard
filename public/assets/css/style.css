@@ -8,6 +8,9 @@
     font-size: 0.8rem;
   }
 
+  .login_body {
+    padding-bottom: 15em;
+  }
 
   /* nav button */
   .nav__btn button:hover {
