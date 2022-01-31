@@ -16,8 +16,9 @@ Run "npm i" or "npm intall" from the root to install all the dependencies needed
 - <a href="https://www.npmjs.com/package/mysql2">mysql2</a>
 - <a href="https://www.npmjs.com/package/express-handlebars">Handlebars</a>
 - <a href="https://insomnia.rest/">Insomnia</a>
-- <a href="">jQuery</a>
+- <a href="https://jquery.com/">jQuery</a>
 
 
 ## Usage
 Words are Hard is a news-feed style full-stack web application. Users can post pictures, memes, and gifs. Words are Hard is a fun and creative social media app.
+
