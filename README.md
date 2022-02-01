@@ -1,11 +1,12 @@
 
 # Words are hard! 
 <img src="https://github.com/erinknapp/words-are-hard/blob/develop/public/assets/images/lets%20do%20this.jpg">
+
 ## Description
 Chat program in which you can only talk in memes! This full-stack app is deployed on <a href="https://www.https://www.heroku.com/">Heroku</a>. Words are Hard follows the <a href="https://towardsdatascience.com/everything-you-need-to-know-about-mvc-architecture-3c827930b4c1">MVC standard</a> for full-stack apps.
 
 ## Installation
-Run "npm i" or "npm intall" from the root to install all the dependencies needed.
+Run `npm i` or `npm intall` from the root to install all the dependencies needed.
 
 ## Made with
 - <a href="https://getbootstrap.com/">Bootstrap</a>
