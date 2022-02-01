@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 async function getGiphys(input) {
   var giphyApiKey = "WnnzeT61NGgg3RtGQXPZDDr25T808hKc"
   var giphyApiURL = `https://api.giphy.com/v1/gifs/search?q=${input}&rating=g&api_key=${giphyApiKey}`
@@ -17,7 +15,6 @@ async function getGiphys(input) {
 
 
 
->>>>>>> 5423138900e8ebd526d7b2ecdc0421256ff3c07f
 async function newFormHandler(event) {
   event.preventDefault();
 
@@ -43,8 +40,5 @@ async function newFormHandler(event) {
 }
 
 document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 5423138900e8ebd526d7b2ecdc0421256ff3c07f
