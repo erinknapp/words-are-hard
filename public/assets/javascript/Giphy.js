@@ -1,8 +1,12 @@
 const populateGiphy_1_El = document.getElementById('populateGiphy_1_');
 const populateGiphy_2_El = document.getElementById('populateGiphy_2_');
-
+const search_btn = document.getElementById('search_btn');
+const post_btn = document.getElementById('post_btn');
 
 let giphys = [];
+let url;
+let title;
+let giphyid;
 
 function getGifs_1_() {
     var userInput = document.getElementById("input__gif_1_").value
@@ -31,6 +35,8 @@ function getGifs_1_() {
         }
     })
 }
+console.log(giphys)
+
 
 function getGifs_2_() {
     var userInput = document.getElementById("input__gif_2_").value
@@ -60,13 +66,38 @@ function getGifs_2_() {
     })
 }
 
+
 function selectGiphy(e) {
-    const {id} = e.target;
+    const {id}= e.target;
     console.log(id);
-    let selectGiphy = giphys.filter(gif => gif.id === id);
-    console.log(selectGiphy[0].images.original.url);
-    
+    giphyid = id;
+
 }
 
+function post_gify(){
+    console.log(giphyid);
+    let selectGiphy = giphys.filter(gif => gif.id === giphyid);
+    console.log(selectGiphy);
+        url= selectGiphy[0].images.original.url,
+        title= selectGiphy[0].title
+    
+        fetch('/api/post', {
+            method: 'POST',
+            body: JSON.stringify({
+                url,
+                title
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => {
+            console.log(res);
+        }).catch(error => {
+            console.log(error);
+        })
 
+}
+
+search_btn.addEventListener('click', getGifs_1_ );
 document.addEventListener('click', selectGiphy);
+post_btn.addEventListener('click', post_gify);
