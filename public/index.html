@@ -31,10 +31,19 @@
     <div style="max-width: 28rem; width: 100%">
       <!-- login form -->
       <!-- first was form tag -->
-      <div class="bg-white shadow rounded p-3 input-group-lg">
-        <input type="email" class="form-control my-3" placeholder="Email address or phone number" />
-        <input type="password" class="form-control my-3" placeholder="Password" />
-        <a href="./feed.html"><button class="btn btn-primary w-100 my-3">Log In</button></a>
+      <form class="login-form">
+        <div>
+          <label for="email-login">email:</label>
+          <input type="text" id="email-login" />
+        </div>
+        <div>
+          <label for="password-login">password:</label>
+          <input type="password" id="password-login" />
+        </div>
+        <div>
+          <button type="submit">login</button>
+        </div>
+      </form>
         <!-- create form -->
         <hr />
         <div class="text-center my-4">
@@ -45,49 +54,33 @@
         <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <!-- head -->
-              <div class="modal-header">
+              <form class="signup-form">
                 <div>
-                  <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
-                  <span class="text-muted fs-7">Become a memer!</span>
+                  <label for="username-signup">username:</label>
+                  <input type="text" id="username-signup" />
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <!-- body -->
-              <div class="modal-body">
-                <form>
-                  <!-- names -->
-                  <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="First name" />
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Surname" />
-                    </div>
-                  </div>
-                  <!-- email & pass -->
-                  <input type="email" class="form-control my-3" placeholder="Mobile number or email address" />
-                  <input type="password" class="form-control my-3" placeholder="New password" />
-                  <!--profile picture-->
-                  <div>
-                    <span class="text-muted fs-7">Upload Profile Picture <i class="fas fa-question-circle"
-                        data-bs-toggle="popover" type="button"
-                        data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
-                    <input class="form-control form-control-lg" id="formFileLg" type="file" accept="image/*" />
-                  </div>
-                  <!-- disclaimer -->
-                  <div>
-                    <span class="text-muted fs-7">By clicking Sign Up, you agree to become a memer..</span>
-                  </div>
-                  <!-- btn -->
-                  <div class="text-center mt-3">
-                    <button type="button" class="btn btn-success btn-lg" data-bs-dismiss="modal">Sign Up</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div>
+                  <label for="email-signup">email:</label>
+                  <input type="text" id="email-signup" />
+                </div>
+                <div>
+                  <label for="password-signup">password:</label>
+                  <input type="password" id="password-signup" />
+                </div>
+                <div>
+                  <span class="text-muted fs-7">Upload Profile Picture <i class="fas fa-question-circle"
+                      data-bs-toggle="popover" type="button"
+                      data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                  <input class="form-control form-control-lg" id="formFileLg" type="file" accept="image/*" />
+                </div>
+                <div>
+                  <span class="text-muted fs-7">By clicking Sign Up, you agree to become a memer..</span>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-success btn-lg" data-bs-dismiss="modal">signup</button>
+                </div>
+              </form>
+              
         <!-- modal end -->
       </div>
       <!-- tag -->
