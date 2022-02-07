@@ -30,73 +30,139 @@
     <!-- form card -->
     <div style="max-width: 28rem; width: 100%">
       <!-- login form -->
+
+
+
+
       <!-- first was form tag -->
       <form class="login-form">
-        <div>
-          <label for="email-login">email:</label>
-          <input type="text" id="email-login" />
-        </div>
-        <div>
-          <label for="password-login">password:</label>
-          <input type="password" id="password-login" />
-        </div>
-        <div>
-          <button type="submit">login</button>
-        </div>
+        <div class="bg-white shadow rounded p-3 ">
+          <div>
+            <label for="email-login"></label>
+            <input type="text" id="email-login" placeholder="Email" class="form-control my-3" />
+          </div>
+          
+          <div>
+            <label for="password-login"></label>
+            <input type="password" id="password-login" placeholder="Password" class="form-control my-3" />
+          </div>
+
+
+          <div>
+            <button type="submit" class="btn btn-primary w-100 my-3">login</button>
+          </div>
+
       </form>
-        <!-- create form -->
-        <hr />
-        <div class="text-center my-4">
-          <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal"
-            data-bs-target="#createModal">Create New Account</button>
-        </div>
-        <!-- create modal -->
-        <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <form class="signup-form">
-                <div>
-                  <label for="username-signup">username:</label>
-                  <input type="text" id="username-signup" />
+
+
+
+
+      <!-- create form -->
+      <hr />
+      <div class="text-center my-4">
+        <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#createModal">Create
+          New Account</button>
+      </div>
+      <!-- create modal -->
+      <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- head -->
+            <div class="modal-header">
+              <div>
+                <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+                <span class="text-muted fs-7">Become a memer!</span>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- body -->
+            <div class="modal-body">
+              <form>
+                <!-- names -->
+                <div class="row">
+                  <div class="col">
+                    <label for="username-signup"></label>
+                    <input type="text" id="username-signup" class="form-control" placeholder="User Name" />
+                  </div>
                 </div>
-                <div>
-                  <label for="email-signup">email:</label>
-                  <input type="text" id="email-signup" />
+
+                <div class="row">
+                  <div class="col">
+                    <label for="email-signup"></label>
+                    <input type="text" id="email-signup" class="form-control" placeholder="Email" />
+                  </div>
                 </div>
-                <div>
-                  <label for="password-signup">password:</label>
-                  <input type="password" id="password-signup" />
+
+                <div class="row">
+                  <div class="col">
+                    <label for="password-signup"></label>
+                    <input type="password" id="password-signup" class="form-control" placeholder="Password" />
+                  </div>
                 </div>
+                
+
+
+
+
+                <!--profile picture-->
                 <div>
                   <span class="text-muted fs-7">Upload Profile Picture <i class="fas fa-question-circle"
                       data-bs-toggle="popover" type="button"
                       data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
                   <input class="form-control form-control-lg" id="formFileLg" type="file" accept="image/*" />
                 </div>
+
+
+                <!-- disclaimer -->
                 <div>
                   <span class="text-muted fs-7">By clicking Sign Up, you agree to become a memer..</span>
                 </div>
-                <div>
-                  <button type="submit" class="btn btn-success btn-lg" data-bs-dismiss="modal">signup</button>
+                <!-- btn -->
+                <div class="text-center mt-3">
+                  <button type="submit" class="btn btn-success btn-lg" data-bs-dismiss="modal">Sign Up</button>
                 </div>
               </form>
-              
-        <!-- modal end -->
+
+
+
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- tag -->
-      <div class="my-5 pb-5 text-center ">
-        <p class="fw-bold"><a class="text-decoration-none text-dark">Share this Page!</a> <span
-            class="fw-normal">laughting with friends is always more fun.</span></p>
-      </div>
+      <!-- modal end -->
+    </div>
+    <!-- tag -->
+    <div class="my-5 pb-5 text-center ">
+      <p class="fw-bold"><a class="text-decoration-none text-dark">Share this Page!</a> <span
+          class="fw-normal">laughting with friends is always more fun.</span></p>
     </div>
   </div>
-
+  </div>
+  <!-- Footer -->
+  <footer class="bg-white p-4 text-muted" id="index-footer">
+    <div class="container">
+      <!-- actions -->
+      <div class="d-flex flex-wrap">
+        <p class="mx-2 fs-7 mb-0">Developed by:</p>
+        <a class="mx-2 fs-7 mb-0" href="https://github.com/gr4ham18" target="_blank">Gabriel Graham</a>
+        <a class="mx-2 fs-7 mb-0" href="https://github.com/cboensch6505" target="_blank">Corey Boensch</a>
+        <a class="mx-2 fs-7 mb-0" href="https://github.com/erinknapp" target="_blank">Erin Knapp</a>
+        <a class="mx-2 fs-7 mb-0" href="https://github.com/pmacdonald15" target="_blank">Phillip MacDonald</a>
+        <a class="mx-2 fs-7 mb-0" href="https://github.com/Spooncodes" target="_blank">Anthony Lively</a>
+      </div>
+      <!-- copy -->
+      <div class="mt-4 mx-2">
+        <p class="fs-7">Words are hard. &copy; 2022</p>
+      </div>
+    </div>
+  </footer>
   <!--bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <!--main.js-->
-  <script src="./assets/javascript/Giphy.js"></script>
+  <script src="../controllers/api/Giphy.js"></script>
   <script src="./assets/javascript/script.js"></script>
 </body>
 
