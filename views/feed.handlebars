@@ -1,0 +1,401 @@
+<!-- ================= Appbar ================= -->
+  <div class="bg-white d-flex align-items-center fixed-top shadow" style="min-height: 56px; z-index: 5">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <!-- search -->
+        <div class="col d-flex align-items-center">
+          <!-- search bar -->
+          <div class="input-group ms-4" type="button">
+
+            <!-- logo -->
+            <i class="fas fa-comment-slash mx-3" style="font-size: 3rem"></i>
+
+            <!-- Words are hard -->
+            <h1 class="text-warning fw-bold .fs-3 ml-5">Words are hard! </h1>
+
+
+          </div>
+        </div>
+        <!-- nav -->
+        <div class="col d-none d-xl-flex justify-content-end">
+          <!-- home -->
+          <div class="mx-4 nav__btn nav__btn-active">
+            <button type="button" class="btn px-4">
+              <i href="#top" class="fas fa-home text-muted fs-4"></i>
+            </button>
+          </div>
+
+
+          <!-- menu -->
+          <div class="
+                rounded-circle
+                p-1
+                bg-gray
+                d-flex
+                align-items-center
+                justify-content-center
+                mx-2
+              " style="width: 38px; height: 38px" type="button" id="secondMenu" data-bs-toggle="dropdown"
+            aria-expanded="false" data-bs-auto-close="outside">
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <!-- secondary menu dd -->
+          <ul class="dropdown-menu border-0 shadow p-3" aria-labelledby="secondMenu" style="width: 23em">
+            <!-- avatar -->
+            <li class="dropdown-item p-1 rounded d-flex" type="button">
+              <!--place holder user image-->
+              <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2"
+                style="width: 45px; height: 45px; object-fit: cover" />
+              <div>
+                <p class="m-0">Your Name</p>
+                <p class="m-0 text-muted">Professional Memer</p>
+              </div>
+            </li>
+            <hr />
+            <!-- feedback -->
+            <li class="dropdown-item p-1 rounded d-flex align-items-center" type="button">
+              <i class="fas fa-exclamation-circle bg-gray p-2 rounded-circle"></i>
+              <div class="ms-3">
+
+                <a class="m-0 text-decoration-none" href="mailto:09.bouvier-study@icloud.com">Give
+                  Feedback</a>
+                <!-- send email with feedback? -->
+                <p class="m-0 text-muted fs-7">
+                  Help us improve the new Words are hard.
+                </p>
+              </div>
+            </li>
+            <hr />
+
+            <!-- Help & Support -->
+            <li class="dropdown-item p-1 my-3 rounded" type="button">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <div class="d-flex" data-bs-toggle="dropdown">
+                    <i class="
+                          fas
+                          fa-question-circle
+                          bg-gray
+                          p-2
+                          rounded-circle
+                        "></i>
+                    <div class="
+                          ms-3
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                          w-100
+                        ">
+                      <p class="m-0">Help & Support</p>
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                  </div>
+                  <!-- nested menu -->
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center" href="mailto:09.bouvier-study@icloud.com">
+                        <div class="
+                              rounded-circle
+                              p-1
+                              bg-gray
+                              d-flex
+                              align-items-center
+                              justify-content-center
+                              me-2
+                            " style="width: 38px; height: 38px">
+                          <i class="fas fa-at"></i>
+                        </div>
+                        <p class="m-0">Email support</p>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item d-flex align-items-center"
+                        href="https://github.com/erinknapp/words-are-hard/issues" target="_blank">
+                        <div class="
+                              rounded-circle
+                              p-1
+                              bg-gray
+                              d-flex
+                              align-items-center
+                              justify-content-center
+                              me-2
+                            " style="width: 38px; height: 38px">
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <p class="m-0">Report a Issue</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- logout -->
+            <li class="dropdown-item p-1 my-3 rounded" type="button">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="./index.html" class="d-flex text-decoration-none text-dark">
+                    <i class="fas fa-cog bg-gray p-2 rounded-circle"></i>
+                    <div class="
+                          ms-3
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                          w-100
+                        ">
+                      <p class="m-0">Log Out</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- end -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Main ================= -->
+  <div class="container-fluid">
+    <div class="row justify-content-evenly">
+
+      <!-- ================= Timeline ================= -->
+      <div class="col-12 col-lg-8 pb-5">
+        <div class="d-flex flex-column justify-content-center w-100 mx-auto"
+          style="padding-top: 56px; max-width: 680px">
+          <!-- lets meme -->
+          <div class="mt-5 d-flex justify-content-center position-relative ">
+            <div class="mx-1 bg-white rounded story rounded border shadow" style="width: 100%; height: 20%">
+              <h1 class="align-items-center text-center text-black fw-bold  ">¿What do you meme?</h1>
+              <div class="position-absolute top-0 start-50 translate-middle">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- create post -->
+        <div class="bg-white p-3 mt-3 rounded border shadow" id="top">
+          <!-- avatar -->
+          <div class="d-flex" type="button">
+            <div class="p-1">
+              <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover" />
+            </div>
+            <input type="text" class="form-control rounded-pill border-0 bg-gray pointer" disabled
+              placeholder="What meme is on your head?" data-bs-toggle="modal" data-bs-target="#createModal-full" />
+          </div>
+          <!-- create modal original meme-->
+          <div class="modal fade" id="createModal-original-meme" tabindex="-1" aria-labelledby="createModalLabel"
+            aria-hidden="true" data-bs-backdrop="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- head -->
+                <div class="modal-header align-items-center">
+                  <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">
+                    Let's meme
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <div class="my-1 p-1">
+                    <div class="d-flex flex-column">
+                      <!-- name -->
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/collection/happy-people" alt="from fb"
+                            class="rounded-circle" style="
+                                  width: 38px;
+                                  height: 38px;
+                                  object-fit: cover;
+                                " />
+                        </div>
+                        <div>
+                          <p class="m-0 fw-bold">Your name</p>
+                        </div>
+                      </div>
+                      <!-- input image -->
+                      <div>
+                        <p class="m-0 text-muted">Upload your meme</p>
+                        <input class="form-control form-control-lg" id="imgInp" type="file" accept="image/*" />
+                        <hr />
+                        <img id="blah" src="#" />
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary w-100">
+                    Post
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- create modal full -->
+          <div class="modal fade" id="createModal-full" tabindex="-1" aria-labelledby="createModalLabel"
+            aria-hidden="true" data-bs-backdrop="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- head -->
+                <div class="modal-header align-items-center">
+                  <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">
+                    Let's meme
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <div class="my-1 p-1">
+                    <div class="d-flex flex-column">
+                      <!-- name -->
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          {{#if loggedIn}}
+                          <img src="https://source.unsplash.com/collection/happy-people" alt="from fb"
+                            class="rounded-circle" style="
+                                                                                                    width: 38px;
+                                                                                                    height: 38px;
+                                                                                                    object-fit: cover;
+                                                                                                    " />
+                        </div>
+                        <div>
+                          <p class="m-0 fw-bold">Your name</p>
+                        </div>
+                      </div>
+                      <!-- input image -->
+                      <div>
+                        <p class="m-0 text-muted">Upload your meme</p>
+                        <input class="form-control form-control-lg" id="imgInp2" type="file" accept="image/*" />
+                      </div>
+                      <hr />
+                      <!-- searchbar -->
+                      <div class="input-group">
+                        <div class="form-outline">
+                          <input class="form-control me-2" id="input__gif_1_" type="search" placeholder="Search Giphy"
+                            aria-label="Search">
+                        </div>
+                        <button id="search_btn" type="button" class="btn btn-primary">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                      <hr />
+                      <div class="container">
+                        <div class="populateGiphy row" id="populateGiphy_1_"></div>
+                        <!-- <img id="blah2" src="#"  /> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                  <button id="post_btn" type="button" class="btn btn-primary w-100">
+                    Post
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+           {{else}}
+            <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
+            <a href="/login" class="button is-primary">login</a>
+            {{/if}}
+          <hr />
+          <!-- actions -->
+          <div class="d-flex flex-column flex-lg-row mt-3">
+            <!-- send meme -->
+            <div class="
+                    dropdown-item
+                    rounded
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                " type="button" data-bs-toggle="modal" data-bs-target="#createModal-original-meme">
+              <i class="fas fa-file-upload me-2 text-primary"></i>
+              <p class="m-0 text-muted">Send your Meme</p>
+            </div>
+
+            <!-- find giphy -->
+            <div class="
+                    dropdown-item
+                    rounded
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                  " type="button" data-bs-toggle="modal" data-bs-target="#createModal-find-giphy">
+              <i class="far fa-file-image me-2 text-success"></i>
+              <p class="m-0 text-muted">Find a Giphy</p>
+            </div>
+            <!--modal-find - giphy-->
+
+            <div class="modal fade" id="createModal-find-giphy" tabindex="-1" aria-labelledby="createModalLabel"
+              aria-hidden="true" data-bs-backdrop="false">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- head -->
+                  <div class="modal-header align-items-center">
+                    <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">
+                      Let's meme with Giphy
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- body -->
+                  <div class="modal-body">
+                    <div class="my-1 p-1">
+                      <div class="d-flex flex-column">
+                        <!-- name -->
+                        <div class="d-flex align-items-center">
+                          <div class="p-2">
+                            <img src="https://source.unsplash.com/collection/happy-people" alt="from fb"
+                              class="rounded-circle" style="
+                                width: 38px;
+                                height: 38px;
+                                object-fit: cover;
+                              " />
+                          </div>
+                          <div>
+                            <p class="m-0 fw-bold">user_name_here</p>
+                          </div>
+                        </div>
+                        <!-- searchbar -->
+                        <div class="input-group">
+                          <div class="form-outline">
+                            <input class="form-control me-2" id="input__gif_2_" type="search" placeholder="Search Giphy"
+                              aria-label="Search">
+                          </div>
+                          <button onclick="getGifs_2_()" type="button" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                        <hr />
+                        <div class="container">
+                          <div class="populateGiphy row" id="populateGiphy_2_"></div>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+                    <!-- end -->
+                  </div>
+                  <!-- footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary w-100">
+                      Post
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,7 +1,7 @@
 {
   "name": "words-are-hard",
   "version": "1.0.0",
-  "description": "",
+  "description": "<img src=\"https://github.com/erinknapp/words-are-hard/blob/develop/public/assets/images/lets%20do%20this.jpg\">",
   "main": "server.js",
   "scripts": {
     "test": "jest",
@@ -25,5 +25,14 @@
   },
   "devDependencies": {
     "jest": "^27.4.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinknapp/words-are-hard.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/erinknapp/words-are-hard/issues"
+  },
+  "homepage": "https://github.com/erinknapp/words-are-hard#readme"
 }

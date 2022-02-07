@@ -1,0 +1,126 @@
+<body class="bg-gray">
+   <main>
+  <!-- Login -->
+  <div class="container mt-5 pt-5 d-flex flex-column flex-lg-row justify-content-evenly login_body">
+    <!-- heading -->
+    <div class="text-center text-lg-start mt-0 pt-0 mt-lg-5 pt-lg-5">
+      <h1 class="text-warning fw-bold fs-0">Words are hard!</h1>
+      <p class="w-75 mx-auto fs-3 mx-lg-0">¿ What do you meme ?</p>
+    </div>
+    <!-- form card -->
+    <div style="max-width: 28rem; width: 100%">
+      <!-- login form -->
+
+
+
+
+      <!-- first was form tag -->
+      <form class="login-form">
+        <div class="bg-white shadow rounded p-3 ">
+          <div>
+            <label for="email-login"></label>
+            <input type="text" id="email-login" placeholder="Email" class="form-control my-3" />
+          </div>
+          
+          <div>
+            <label for="password-login"></label>
+            <input type="password" id="password-login" placeholder="Password" class="form-control my-3" />
+          </div>
+
+
+          <div>
+            <button type="submit" class="btn btn-primary w-100 my-3" href="/feed">login</button>
+          </div>
+
+      </form>
+
+
+
+
+      <!-- create form -->
+      <hr />
+      <div class="text-center my-4">
+        <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#createModal">Create
+          New Account</button>
+      </div>
+      <!-- create modal -->
+      <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- head -->
+            <div class="modal-header">
+              <div>
+                <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+                <span class="text-muted fs-7">Become a memer!</span>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- body -->
+            <div class="modal-body">
+              <form>
+                <!-- names -->
+                <div class="row">
+                  <div class="col">
+                    <label for="username-signup"></label>
+                    <input type="text" id="username-signup" class="form-control" placeholder="User Name" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <label for="email-signup"></label>
+                    <input type="text" id="email-signup" class="form-control" placeholder="Email" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <label for="password-signup"></label>
+                    <input type="password" id="password-signup" class="form-control" placeholder="Password" />
+                  </div>
+                </div>
+                
+
+
+
+
+                <!--profile picture-->
+                <div>
+                  <span class="text-muted fs-7">Upload Profile Picture <i class="fas fa-question-circle"
+                      data-bs-toggle="popover" type="button"
+                      data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                  <input class="form-control form-control-lg" id="formFileLg" type="file" accept="image/*" />
+                </div>
+
+
+                <!-- disclaimer -->
+                <div>
+                  <span class="text-muted fs-7">By clicking Sign Up, you agree to become a memer..</span>
+                </div>
+                <!-- btn -->
+                <div class="text-center mt-3">
+                  <button type="submit" class="btn btn-success btn-lg" data-bs-dismiss="modal">Sign Up</button>
+                </div>
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal end -->
+    </div>
+    <!-- tag -->
+    <div class="my-5 pb-5 text-center ">
+      <p class="fw-bold"><a class="text-decoration-none text-dark">Share this Page!</a> <span
+          class="fw-normal">laughting with friends is always more fun.</span></p>
+    </div>
+  </div>
+  </div>
+  </main>
+  <!--main.js-->
+  <script src="../controllers/api/Giphy.js"></script>
+  <script src="./assets/javascript/script.js"></script>
+</body>
