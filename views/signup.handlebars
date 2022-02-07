@@ -1,0 +1,69 @@
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- head -->
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+                    <span class="text-muted fs-7">Become a memer!</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- body -->
+            <div class="modal-body">
+                <form>
+                    <!-- names -->
+                    <div class="row">
+                        <div class="col">
+                            <label for="username-signup"></label>
+                            <input type="text" id="username-signup" class="form-control" placeholder="User Name" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="email-signup"></label>
+                            <input type="text" id="email-signup" class="form-control" placeholder="Email" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="password-signup"></label>
+                            <input type="password" id="password-signup" class="form-control" placeholder="Password" />
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!--profile picture-->
+                    <div>
+                        <span class="text-muted fs-7">Upload Profile Picture <i class="fas fa-question-circle"
+                                data-bs-toggle="popover" type="button"
+                                data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                        <input class="form-control form-control-lg" id="formFileLg" type="file" accept="image/*" />
+                    </div>
+
+
+                    <!-- disclaimer -->
+                    <div>
+                        <span class="text-muted fs-7">By clicking Sign Up, you agree to become a memer..</span>
+                    </div>
+                    <!-- btn -->
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-success btn-lg" data-bs-dismiss="modal">Sign Up</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- javascript file-->
+<script src="/javascript/signup.js"></script>

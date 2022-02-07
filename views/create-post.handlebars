@@ -1,6 +1,4 @@
-{{> post-info post}}
 
-{{#if loggedIn}}
 <!-- p 1 -->
               <div class="bg-white p-4 rounded shadow mt-3">
                   <!-- author -->
@@ -74,11 +72,5 @@
                         class="img-fluid rounded"
                       />
                     </div>
-{{/if}}
 
-{{> comments post.comments}}
-
-{{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
-{{/if}}
+<script src="/javascript/add-post.js"></script>
