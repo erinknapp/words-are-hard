@@ -1,3 +1,5 @@
+console.log ("check")
+
 async function loginFormHandler(event) {
   event.preventDefault();
 
