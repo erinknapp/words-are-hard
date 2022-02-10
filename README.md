@@ -1,4 +1,3 @@
-
 # Words are hard! 
 <img src="https://github.com/erinknapp/words-are-hard/blob/develop/public/assets/images/lets%20do%20this.jpg">
 ![GitHub last commit](https://img.shields.io/github/last-commit/erinknapp/words-are-hard?style=flat-square)
@@ -28,6 +27,7 @@ Chat program in which you can only talk in memes! This full-stack app is deploye
 - <a href="https://insomnia.rest/">Insomnia</a>
 - <a href="https://jquery.com/">jQuery</a>
 - <a href="https://www.npmjs.com/package/nodemon">Nodemon Package</a>
+- <a href="https://www.npmjs.com/package/bcrypt">Bcrypt</a>
 <hr/>
 
 ## Usage
