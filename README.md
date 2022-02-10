@@ -27,6 +27,7 @@ Chat program in which you can only talk in memes! This full-stack app is deploye
 - <a href="https://insomnia.rest/">Insomnia</a>
 - <a href="https://jquery.com/">jQuery</a>
 - <a href="https://www.npmjs.com/package/nodemon">Nodemon Package</a>
+- <a href="https://www.npmjs.com/package/bcrypt">Bcrypt</a>
 <hr/>
 
 ## Usage
