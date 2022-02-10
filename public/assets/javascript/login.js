@@ -1,5 +1,3 @@
-console.log ("check")
-
 async function loginFormHandler(event) {
   event.preventDefault();
 
@@ -43,7 +41,7 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.replace('/feed/');
+      document.location.replace('/feed');
     } else {
       alert(response.statusText);
     }
