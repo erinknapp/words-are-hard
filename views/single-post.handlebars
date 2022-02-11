@@ -11,15 +11,15 @@
                     <div class="d-flex">
                         <!--#######################-->
                       <img
-                        src="????????????"
+                        src="../public/assets/images/favicon.png"
                         alt="avatar"
                         class="rounded-circle me-2"
                         style="width: 38px; height: 38px; object-fit: cover"
                       />
                       <div>
                           <!--#################################-->
-                        <p class="m-0 fw-bold">????????????????????????</p>
-                        <span class="text-muted fs-7">???????????????</span>
+                        <p class="m-0 fw-bold">{{user.username}}</p>
+                        <span class="text-muted fs-7">{{formatDate my.context.date "DD.MM.YYYY HH:mm"}}</span>
                       </div>
                     </div>
                     <!-- edit -->
@@ -71,7 +71,7 @@
                     <div>
                      
                       <img
-                        src="https://source.unsplash.com/random/12"
+                        src="input__gif_2_"
                         alt="post image"
                         class="img-fluid rounded"
                       />
@@ -81,7 +81,8 @@
 {{> comments post.comments}}
 
 {{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
+<script src="/assets/javascript/Giphy.js"></script>
+<script src="/assets/javascript/add-post.js"></script>
+<script src="assets/javascript/script.js"></script>
 {{/if}}
 </body>
