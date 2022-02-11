@@ -81,7 +81,7 @@ function post_gify(){
         url= selectGiphy[0].images.original.url,
         title= selectGiphy[0].title
     
-        fetch('/api/post-routes', {
+        fetch('controllers/api/post-routes.js', {
             method: 'POST',
             body: JSON.stringify({
                 url,
