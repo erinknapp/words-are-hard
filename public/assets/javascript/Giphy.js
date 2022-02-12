@@ -84,13 +84,14 @@ function post_gify(){
         fetch('/api/posts', {
             method: 'POST',
             body: JSON.stringify({
-                url,
+                post_url: url,
                 title
             }),
             headers: {
                 "Content-Type": "application/json"
             }
         }).then(res => {
+            location.reload()
             console.log(res);
         }).catch(error => {
             console.log(error);
