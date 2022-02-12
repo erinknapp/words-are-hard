@@ -1,6 +1,6 @@
 <body>
 
-<!-- ================= Appbar ================= -->
+  <!-- ================= Appbar ================= -->
   <div class="bg-white d-flex align-items-center fixed-top shadow" style="min-height: 56px; z-index: 5">
     <div class="container-fluid">
       <div class="row align-items-center justify-content-center">
@@ -21,10 +21,10 @@
         <!-- nav -->
         <div class="col d-none d-xl-flex justify-content-end">
           <!-- home -->
-          <div class="mx-4 nav__btn nav__btn-active">
-            <button type="button" class="btn px-4">
-              <i href="#top" class="fas fa-home text-muted fs-4"></i>
-            </button>
+          <div class="mx-4 nav__btn nav__btn-active"  >
+            <a type="button" class="btn px-4" href="https://trollface.dk/" target="_blank" >
+              <i  class="fas fa-home text-muted fs-4"></i>
+            </a>
           </div>
 
 
@@ -46,10 +46,10 @@
             <!-- avatar -->
             <li class="dropdown-item p-1 rounded d-flex" type="button">
               <!--place holder user image-->
-              <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2"
+              <img src="/assets/images/favicon.png" alt="avatar" class="rounded-circle me-2"
                 style="width: 45px; height: 45px; object-fit: cover" />
               <div>
-                <p class="m-0">{{user.username}}</p>
+                <p class="m-0">Licensed by Group 11</p>
                 <p class="m-0 text-muted">Professional Memer</p>
               </div>
             </li>
@@ -159,7 +159,7 @@
   </div>
 
   <!-- ================= Main ================= -->
-  <div class="container-fluid">
+  <div class="container-fluid row justify-content-evenly">
     <div class="row justify-content-evenly">
 
       <!-- ================= Timeline ================= -->
@@ -182,63 +182,13 @@
           <!-- avatar -->
           <div class="d-flex" type="button">
             <div class="p-1">
-              <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2"
+              <img src="/assets/images/favicon.png" alt="avatar" class="rounded-circle me-2"
                 style="width: 38px; height: 38px; object-fit: cover" />
             </div>
             <input type="text" class="form-control rounded-pill border-0 bg-gray pointer" disabled
               placeholder="What meme is on your head?" data-bs-toggle="modal" data-bs-target="#createModal-full" />
           </div>
-          <!-- create modal original meme-->
-          <div class="modal fade" id="createModal-original-meme" tabindex="-1" aria-labelledby="createModalLabel"
-            aria-hidden="true" data-bs-backdrop="false">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <!-- head -->
-                <div class="modal-header align-items-center">
-                  <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">
-                    Let's meme
-                  </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <!-- body -->
-                <div class="modal-body">
-                  <div class="my-1 p-1">
-                    <div class="d-flex flex-column">
-                      <!-- name -->
-                      <div class="d-flex align-items-center">
-                        <div class="p-2">
-                          <img src="https://source.unsplash.com/collection/happy-people" alt="from fb"
-                            class="rounded-circle" style="
-                                  width: 38px;
-                                  height: 38px;
-                                  object-fit: cover;
-                                " />
-                        </div>
-                        <div>
-                          <p class="m-0 fw-bold">Your name</p>
-                        </div>
-                      </div>
-                      <!-- input image -->
-                      <div>
-                        <p class="m-0 text-muted">Upload your meme</p>
-                        <input class="form-control form-control-lg" id="imgInp" type="file" accept="image/*" />
-                        <hr />
-                        <img id="blah" src="#" />
-                      </div>
 
-                    </div>
-                  </div>
-                  <!-- end -->
-                </div>
-                <!-- footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary w-100">
-                    Post
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- create modal full -->
           <div class="modal fade" id="createModal-full" tabindex="-1" aria-labelledby="createModalLabel"
             aria-hidden="true" data-bs-backdrop="false">
@@ -259,22 +209,18 @@
                       <div class="d-flex align-items-center">
                         <div class="p-2">
                           {{#if loggedIn}}
-                          <img src="https://source.unsplash.com/collection/happy-people" alt="from fb"
-                            class="rounded-circle" style="
+                          <img src="/assets/images/favicon.png" alt="from fb" class="rounded-circle" style="
                                                                                                     width: 38px;
                                                                                                     height: 38px;
                                                                                                     object-fit: cover;
                                                                                                     " />
                         </div>
                         <div>
-                          <p class="m-0 fw-bold">{{user.username}}</p>
+                          <p class="m-0 fw-bold">Your Memer Name</p>
                         </div>
                       </div>
                       <!-- input image -->
-                      <div>
-                        <p class="m-0 text-muted">Upload your meme</p>
-                        <input class="form-control form-control-lg" id="imgInp2" type="file" accept="image/*" />
-                      </div>
+
                       <hr />
                       <!-- searchbar -->
                       <div class="input-group">
@@ -301,99 +247,31 @@
                     Post
                   </button>
                 </div>
+
               </div>
             </div>
-          </div>
-           {{else}}
+
+            {{else}}
             <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
             <a href="/login" class="button is-primary">login</a>
             {{/if}}
-          <hr />
-          <!-- actions -->
-          <div class="d-flex flex-column flex-lg-row mt-3">
-            <!-- send meme -->
-            <div class="
+            <hr />
+            <!-- actions -->
+            <div class="d-flex flex-column flex-lg-row mt-3">
+              <!-- send meme -->
+              <div class="
                     dropdown-item
                     rounded
                     d-flex
                     align-items-center
                     justify-content-center
                 " type="button" data-bs-toggle="modal" data-bs-target="#createModal-original-meme">
-              <i class="fas fa-file-upload me-2 text-primary"></i>
-              <p class="m-0 text-muted">Send your Meme</p>
-            </div>
-
-            <!-- find giphy -->
-            <div class="
-                    dropdown-item
-                    rounded
-                    d-flex
-                    align-items-center
-                    justify-content-center
-                  " type="button" data-bs-toggle="modal" data-bs-target="#createModal-find-giphy">
-              <i class="far fa-file-image me-2 text-success"></i>
-              <p class="m-0 text-muted">Find a Giphy</p>
-            </div>
-            <!--modal-find - giphy-->
-
-            <div class="modal fade" id="createModal-find-giphy" tabindex="-1" aria-labelledby="createModalLabel"
-              aria-hidden="true" data-bs-backdrop="false">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <!-- head -->
-                  <div class="modal-header align-items-center">
-                    <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">
-                      Let's meme with Giphy
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <!-- body -->
-                  <div class="modal-body">
-                    <div class="my-1 p-1">
-                      <div class="d-flex flex-column">
-                        <!-- name -->
-                        <div class="d-flex align-items-center">
-                          <div class="p-2">
-                            <img src="https://source.unsplash.com/collection/happy-people" alt="from fb"
-                              class="rounded-circle" style="
-                                width: 38px;
-                                height: 38px;
-                                object-fit: cover;
-                              " />
-                          </div>
-                          <div>
-                            <p class="m-0 fw-bold">user_name_here</p>
-                          </div>
-                        </div>
-                        <!-- searchbar -->
-                        <div class="input-group">
-                          <div class="form-outline">
-                            <input class="form-control me-2" id="input__gif_2_" type="search" placeholder="Search Giphy"
-                              aria-label="Search">
-                          </div>
-                          <button onclick="getGifs_2_()" type="button" class="btn btn-primary">
-                            <i class="fas fa-search"></i>
-                          </button>
-                        </div>
-                        <hr />
-                        <div class="container">
-                          <div class="populateGiphy row" id="populateGiphy_2_"></div>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-                    <!-- end -->
-                  </div>
-                  <!-- footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary w-100">
-                      Post
-                    </button>
-                  </div>
-                </div>
+                <i class="fas fa-file-upload me-2 text-primary"></i>
+                <p class="m-0 text-muted">Send your Meme</p>
               </div>
+
+
+
             </div>
             <hr />
 
@@ -401,96 +279,50 @@
 
         </div>
       </div>
-    </div> 
-  <script src="/assets/javascript/Giphy.js"></script>
- 
+    </div>
 
-
-          {{#each posts as |post|}}
-             {{!-- <h2>{{post.title}}</h2> --}}
-
-             
+    <script src="/assets/javascript/Giphy.js"></script>
 
 
 
+    {{#each posts as |post|}}
+    {{!-- <h2>{{post.title}}</h2> --}}
 
 
-<div class="bg-white p-4 rounded shadow mt-3">
-                  <!-- author -->
-                  <div class="d-flex justify-content-between">
-                    <!-- avatar -->
-                    <div class="d-flex">
-                        <!--#######################-->
-                      <img
-                        src="/assets/images/favicon.png"
-                        alt="avatar"
-                        class="rounded-circle me-2"
-                        style="width: 38px; height: 38px; object-fit: cover"
-                      />
-                      <div>
-                          <!--username-->
-                        <p class="m-0 fw-bold">{{user.username}}</p>
-                        {{!-- <span class="text-muted fs-7">{{formatDate my.context.date "DD.MM.YYYY HH:mm"}}</span> --}}
-                      </div>
-                    </div>
-                    <!-- edit -->
-                    <i
-                      class="fas fa-ellipsis-h"
-                      type="button"
-                      id="post1Menu"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    ></i>
-                    <!-- edit menu -->
-                    <ul
-                      class="dropdown-menu border-0 shadow"
-                      aria-labelledby="post1Menu"
-                    >
-                      <li class="d-flex align-items-center">
-                        <a
-                          class="
-                            dropdown-item
-                            d-flex
-                            justify-content-around
-                            align-items-center
-                            fs-7
-                          "
-                          href="#"
-                        >
-                          Edit Post</a
-                        >
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <a
-                          class="
-                            dropdown-item
-                            d-flex
-                            justify-content-around
-                            align-items-center
-                            fs-7
-                          "
-                          href="#"
-                        >
-                          Delete Post</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- post content -->
-                  <div class="mt-3">
-                    <!-- content -->
-                    <div>
-                     
-                      <img
-                        src="{{post.post_url}}" alt="{{post.title}}"
-                        class="img-fluid rounded"
-                      />
-                    </div>
-
-</div>
-
-</div>
 
 
-          {{/each}}
+
+
+
+    <div class="bg-white p-4 rounded shadow mt-3 col-12 col-lg-8">
+      <!-- author -->
+      <div class="d-flex justify-content-between">
+        <!-- avatar -->
+        <div class="d-flex">
+          <!--favicon-->
+          <img src="/assets/images/favicon.png" alt="avatar" class="rounded-circle me-2"
+            style="width: 38px; height: 38px; object-fit: cover" />
+          <div>
+            <!--username-->
+            <p class="m-0 fw-bold">{{user.username}}</p>
+            {{!-- <span class="text-muted fs-7">{{formatDate my.context.date "DD.MM.YYYY HH:mm"}}</span> --}}
+          </div>
+        </div>
+        
+       
+      </div>
+      <!-- post content -->
+      <div class="mt-3">
+        <!-- content -->
+        <div>
+
+          <img src="{{post.post_url}}" alt="{{post.title}}" class="img-fluid rounded" />
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {{/each}}
 </body>
